@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header2 from "@/components/header2";
 import { Card, CardContent, } from "@/components/ui/card"
 // import Link from "next/link";
@@ -22,7 +23,6 @@ const inter = Inter({
     weight: ["500", "600", "700"]
 })
 
-import Image from "next/image";
 
 export default function Product() {
     return (

@@ -5,6 +5,7 @@ import FlashSales from "@/components/FlashSale"
 import Header from "@/components/header"
 import HeroPage from "@/components/heropage"
 import HeroPage2 from "@/components/HeroPage2"
+import ThisMonthProducts from "@/components/ThisMonthProduct"
 export default function Home() {
   
   return(
@@ -19,6 +20,7 @@ export default function Home() {
 
       <BestSellProducts/>
       <HeroPage2/>
+      <ThisMonthProducts/>
     </div>
 
   )
