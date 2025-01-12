@@ -40,9 +40,9 @@ const CountdownTimer = () => {
             {Object.entries(timeLeft).map(([label, value], index) => (
                 <div key={index} className="flex  justify-center items-center gap-3 ">
                     <div className="text-center">
-                        <p className="text-sm text-gray-500">{label}</p>
+                        <p className="text-xs md:text-sm text-gray-500">{label}</p>
 
-                        <p className="text-4xl font-bold">{value.toString().padStart(2, "0")}</p>
+                        <p className="text-3xl md:text-4xl font-bold">{value.toString().padStart(2, "0")}</p>
 
                     </div>
                     <div className="flex justify-center items-center text-red font-bold ">

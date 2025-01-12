@@ -9,7 +9,6 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
-// import Slider from "./Slider"
 import Image from "next/image"
 import Link from "next/link"
 import { Inter } from "next/font/google"

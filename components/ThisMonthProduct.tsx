@@ -39,7 +39,7 @@ export default function ThisMonthProducts() {
                         </div>
 
                     </div>
-                    <div className="flex  justify-center items-center pt-12">
+                    <div className="flex flex-col  justify-center items-center pt-12">
                         <div className=" grid  justify-center items-center grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6  md:gap-7 lg:gap-8">
 
                             <div className="">
@@ -487,7 +487,10 @@ export default function ThisMonthProducts() {
 
 
                     {/* button */}
-                    <button className=" mt-8 rounded-[4px] py-4 px-12 gap[10px]  bg-red  text-dullWhite text-base font-medium">View All </button>
+                    <div className="flex justify-center items-center">
+                    <button className=" mt-8 rounded-[4px] py-4 px-12 gap[10px]   bg-red  text-dullWhite text-base font-medium">View All Products </button>
+                    </div>
+                   
                 </div>
             </div>
         </div>

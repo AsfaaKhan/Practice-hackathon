@@ -1,5 +1,5 @@
 
-import Header from "@/components/header"
+import Header from "@/components/Header"
 import { IoTrashOutline } from "react-icons/io5";
 import Link from "next/link"
 import { Card, CardContent, } from "@/components/ui/card"

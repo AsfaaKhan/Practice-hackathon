@@ -15,7 +15,7 @@ export default function FlashSales() {
                         <div className="bg-red rounded-[4px] w-[20px] h-[40px]"></div>
                         <p className="flex  font-normal text-xl text-red ">{`Today's`}</p>
                     </div>
-                    <div className="flex justify-between gap-5 pt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-5 pt-10">
                         <div className="flex gap-10">
                             <h1 className={`text-4xl font-semibold text-black flex `} >
                                 Flash Sale

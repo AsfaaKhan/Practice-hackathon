@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Header2 from "@/components/header2";
+import Header2 from "@/components/Header2";
 import { Card, CardContent, } from "@/components/ui/card"
 // import Link from "next/link";
 // import { PiShoppingCart } from "react-icons/pi";
