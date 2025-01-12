@@ -6,7 +6,7 @@ export default function HeroPage2() {
             <div className="container bg-black my-24 flex  ">
                 <div className="container flex flex-col py-4 justify-center items-center    lg:flex-row  lg:justify-between w-[1170px] h-auto  lg:h-[500px] text-white gap-[10px]  ">
                     {/* Text */}
-                    <div className=" flex flex-col justify-center pl-14  gap-[15px]">
+                    <div className=" flex flex-col justify-center  item-center pl-14  gap-[15px]">
                         <div>
                         <p className="text-[#00FF66] text-base font-semibold ">Categories</p>
                         </div>
@@ -15,8 +15,8 @@ export default function HeroPage2() {
                         Enhance Your Music Experience 
                         </h1>
                         </div>
-                        <div className="flex gap-6 ">
-                            <div className="flex flex-col border-[1px] rounded-full bg-white text-black justify-center w-[62px] h-[62px] text-center  ">
+                        <div className="flex gap-2 md:gap-6 ">
+                            <div className="flex flex-col border-[1px] rounded-full bg-white text-black justify-center w-[62px]  h-[62px] text-center  ">
                             <span className="font-bold">23</span>
                             <span className="text-[11px] ">Hours</span>
                             </div>

@@ -4,7 +4,7 @@ import { IoEyeOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 
 
-export default function ThisMonthProducts() {
+export default function ExploreOurProducts() {
     return (
         <div className=" flex flex-col justify-center items-center">
             {/* Cards */}

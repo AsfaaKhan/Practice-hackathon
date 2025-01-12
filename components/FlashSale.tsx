@@ -15,40 +15,39 @@ export default function FlashSales() {
                         <div className="bg-red rounded-[4px] w-[20px] h-[40px]"></div>
                         <p className="flex  font-normal text-xl text-red ">{`Today's`}</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-5 pt-10">
+                    <div className="flex flex-col md:flex-row gap-5 pt-10 justify-between">
                         <div className="flex gap-10">
                             <h1 className={`text-4xl font-semibold text-black flex `} >
                                 Flash Sale
                             </h1>
-                            <CountdownTimer />
                         </div>
 
                         {/* Arrows */}
-                        <div className="flex  justify-end items-end ">
-                            <Image src={"/homeImg/Fill With Left Arrow.svg"}
-                                alt="left arrow"
-                                width={46}
-                                height={46}
-                            >
-                            </Image>
+                        <div className="flex justify-between ">
+                            <div>
+                                <CountdownTimer />
+                            </div>
+                            <div className="flex  md:justify-end md:items-end ">
+                                <Image src={"/homeImg/Fill With Left Arrow.svg"}
+                                    alt="left arrow"
+                                    width={46}
+                                    height={46}
+                                >
+                                </Image>
 
-                            <Image src={"/homeImg/Fill with Right Arrow.svg"}
-                                alt="right arrow"
-                                width={46}
-                                height={46}>
+                                <Image src={"/homeImg/Fill with Right Arrow.svg"}
+                                    alt="right arrow"
+                                    width={46}
+                                    height={46}>
 
-                            </Image>
+                                </Image>
+
+                            </div>
 
                         </div>
-
-
-
-
                     </div>
                     <div className="flex  justify-center items-center pt-12">
                         <div className=" grid  justify-center items-center grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6  md:gap-7 lg:gap-8">
-
-
                             <div className="">
                                 <Card>
                                     <CardContent className="w-[270px] rounded-[4px]  flex flex-col  gap-2 ">

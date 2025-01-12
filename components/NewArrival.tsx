@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function NewArrival() {
     return (
         <div>
-            <div className=" container flex flex-col ">
+            <div className=" container flex flex-col my-20 ">
                 <div className="flex gap-5 items-center">
                     <div className="bg-red rounded-[4px] w-[20px] h-[40px]"></div>
                     <p className="flex  font-normal text-xl text-red ">Our Products</p>
