@@ -44,7 +44,7 @@ export default function Header() {
 
                     {/*             NAVBAR ITEMS                  */}
                     <div className=" hidden lg:flex gap-[15px]    font-bold  justify-center text-sm leading-6 text-gray text-center ">
-                        <Link className="  hover:underline " href="/">Home</Link>
+                        <Link className="text-black  text-decoration-none  hover:underline " href="/">Home</Link>
                         <Link className=" hover:underline " href={"/"}> <Select>
                             <SelectTrigger >
                                 <SelectValue placeholder="Shop" className="text-darkBlue"/>
@@ -60,10 +60,10 @@ export default function Header() {
                                 </SelectGroup>
                             </SelectContent>
                         </Select></Link>
-                        <Link className=" hover:underline " href={"/aboutPage"}>About</Link>
-                        <Link className="  hover:underline " href="#contact">Blog</Link>
-                        <Link className="hover:underline " href="/"> Contact</Link>
-                        <Link className="hover:underline " href="/"> Pages</Link>
+                        <Link className="text-black  text-decoration-none hover:underline " href={"/aboutPage"}>About</Link>
+                        <Link className="text-black  text-decoration-none  hover:underline " href="#contact">Blog</Link>
+                        <Link className="text-black  text-decoration-none hover:underline " href="/"> Contact</Link>
+                        <Link className="text-black  text-decoration-none hover:underline " href="/"> Pages</Link>
                     </div>
 
 
@@ -102,13 +102,13 @@ export default function Header() {
 
                 {navbar && (
                     <div className={`lg:hidden bg-white p-4 border-[2px] text-center  ${inter.className}`}>
-                        <Link href="/" className="block text-black  py-2  hover:underline " onClick={handleNavbar}>Home</Link>
+                        <Link href="/" className="block   py-2 text-black  text-decoration-none  hover:underline " onClick={handleNavbar}>Home</Link>
 
-                        <Link href={"/contactPage"} className="block text-black py-2 hover:underline" onClick={handleNavbar}>Contact</Link>
+                        <Link href={"/contactPage"} className="block text-black py-2   text-decoration-none hover:underline" onClick={handleNavbar}>Contact</Link>
 
-                        <Link href={"/aboutPage"} className="block text-black py-2 hover:underline" onClick={handleNavbar}>About</Link>
+                        <Link href={"/aboutPage"} className="block  py-2 text-black  text-decoration-none  hover:underline" onClick={handleNavbar}>About</Link>
 
-                        <Link href="#contact" className="block text-black py-2 hover:underline" onClick={handleNavbar}>Sign Up</Link>
+                        <Link href="#contact" className="block  py-2 text-black  text-decoration-none hover:underline" onClick={handleNavbar}>Sign Up</Link>
                     </div>
                 )}
             </nav>

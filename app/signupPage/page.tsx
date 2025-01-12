@@ -18,6 +18,7 @@ import {
 
 // Font Inter
 import { Inter } from "next/font/google";
+import { Input } from "@/components/ui/input";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -33,7 +34,7 @@ export default function SignUp() {
             <Header />
 
             {/* SignUp Page */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-24">
                 {/* Image */}
                 <div className="bg-[#CBE4E8] rounded-r-[4px] rounded-b-[4px] ">
                     {/* Image */}
@@ -55,14 +56,14 @@ export default function SignUp() {
                                 <div className="grid w-full items-center gap-4">
                                     <div className="flex flex-col gap-10  text-base ">
 
-                                        <input id="name" placeholder="Name" className="gap-2 border-b-[1px] flex" />
-                                        <input id="email" placeholder="Email or Phone Number"
+                                        <Input  id="name" placeholder="Name" className="gap-2 border-b-[1px] flex" />
+                                        <Input  id="email" placeholder="Email or Phone Number"
                                             className="gap-2 border-b-[1px] flex" />
-                                        <input id="password" placeholder="Password"
+                                        <Input  id="password" placeholder="Password"
                                             className="gap-2 border-b-[1px] flex" />
-                                    </div> 
+                                    </div>
 
-                                        <div className="gap-4 flex flex-col">
+                                    <div className="gap-4 flex flex-col">
                                         <button className="bg-[#DB4444] rounded-[4px] pt-4 pb-4  gap-[10px] font-medium text-base
                                           text-[#FAFAFA]">
                                             Create Account
@@ -75,17 +76,17 @@ export default function SignUp() {
                                             </button>
                                         </div>
 
-                                        <div className="flex justify-center gap-4">
+                                        <div className="flex justify-center items-center gap-4">
                                             <p className="font-normal text-base">Already have account?</p>
-                                            <button className="border-b-[1px] hover:text-[#DB4444] border-[#000000] text-base font-medium"><Link href="/loginPage">Log in</Link></button>
+                                            <Link href="/loginPage" className="border-b-[1px] text-decoration-none hover:text-[#DB4444] border-[#000000] text-base font-medium">Log in</Link>
                                         </div>
 
-                                            </div>
+                                    </div>
 
                                 </div>
                             </form>
                         </CardContent>
-                    
+
                     </Card>
                 </div>
             </div>

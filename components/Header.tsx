@@ -23,24 +23,24 @@ export default function Header(){
     return(
         <div> 
             <nav className="p-4  z-10">
-                    <div className=" container mx-auto  top-[88px]   flex gap-16 md:gap-20 lg:gap-24 xl:gap-[190px] 2xl:gap-[190px] justify-between items-center  ">
+                    <div className=" container mx-auto  top-[88px]   flex  md:gap-20 lg:gap-24 xl:gap-[190px] 2xl:gap-[190px] justify-between items-center ">
                        
-                        {/*             LOGO                    */}
+                        {/*        LOGO         */}
                         <div className={` text-xl md:text-2xl lg:text-3xl leading-6  text-[#000000] font-bold ${inter.className} `}>
                             <h1>Exclusive</h1>
                         </div>
 
-                        {/*             NAVBAR ITEMS                  */}
+                        {/*       NAVBAR ITEMS    */}
                         <div className=" hidden lg:flex gap-12   font-normal justify-center text-base text-center">
-                            <Link className="  hover:underline " href="/">Home</Link>
-                            <Link className=" hover:underline " href={"/contactPage"}>Contact</Link>
-                            <Link className=" hover:underline " href={"/aboutPage"}>About</Link>
-                            <Link className="  hover:underline " href="#contact">Sign Up </Link>
-                            <Link className="hover:underline " href="/"> </Link>
+                            <Link className=" text-black  text-decoration-none hover:underline " href="/">Home</Link>
+                            <Link className="text-black  text-decoration-none hover:underline " href={"/contactPage"}>Contact</Link>
+                            <Link className="text-black  text-decoration-none hover:underline " href={"/aboutPage"}>About</Link>
+                            <Link className="text-black  text-decoration-none  hover:underline " href="/signupPage">Sign Up </Link>
+                            
                         </div>
                         
 
-                        {/*         Navbar Icons Anths        */}
+                        {/*    Navbar Icons Anths    */}
                         <div className="flex items-center gap-3 md:gap-4 lg:gap-6">
                         
                         <div className=" hidden md:flex rounded-[4px] pt-[7px] pb-[7px] gap-[10px] pl-3 pr-3  md:gap-[34px] bg-[#F5F5F5] w-[163px] md:w-auto">
@@ -63,20 +63,18 @@ export default function Header(){
                     </div>
 
                     {navbar && (
-                        <div className={`lg:hidden bg-white p-4 border-[2px] text-center  ${inter.className}`}>
-                            <Link href="/" className="block text-black  py-2  hover:underline " onClick={handleNavbar}>Home</Link>
+                        <div className={`lg:hidden bg-white p-4 border-[2px] text-center   ${inter.className}`}>
+                            <Link href="/" className="block text-black  py-2   text-decoration-none  hover:underline " onClick={handleNavbar}>Home</Link>
 
-                            <Link href={"/contactPage"} className="block text-black py-2 hover:underline" onClick={handleNavbar}>Contact</Link>
+                            <Link href={"/contactPage"} className="block py-2 text-black  text-decoration-none hover:underline" onClick={handleNavbar}>Contact</Link>
 
-                            <Link href={"/aboutPage"} className="block text-black py-2 hover:underline" onClick={handleNavbar}>About</Link>
+                            <Link href={"/aboutPage"} className="block  py-2 text-black  text-decoration-none hover:underline" onClick={handleNavbar}>About</Link>
 
-                            <Link href="#contact" className="block text-black py-2 hover:underline" onClick={handleNavbar}>Sign Up</Link>
+                            <Link href="/signupPage" className="block  py-2 text-black  text-decoration-none hover:underline" onClick={handleNavbar}>Sign Up</Link>
                         </div>
                     )}
                 </nav>
-
-                <div className="border-[0.5px] border-black border-opacity-30  "></div>
-
+                <div className="border-[0.5px] border-black opacity-90  "></div>
         </div>
     )
 }

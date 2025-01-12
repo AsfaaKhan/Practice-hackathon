@@ -33,11 +33,11 @@ export default function Header() {
 
                     {/*             NAVBAR ITEMS                  */}
                     <div className=" hidden lg:flex gap-12   font-normal justify-center text-base text-center">
-                        <Link className="  hover:underline " href="/">Home</Link>
-                        <Link className=" hover:underline " href={"/contactPage"}>Contact</Link>
-                        <Link className=" hover:underline " href={"/aboutPage"}>About</Link>
-                        <Link className="  hover:underline " href="#contact">Sign Up </Link>
-                        <Link className="hover:underline " href="/"> </Link>
+                        <Link className="text-black  text-decoration-none  hover:underline " href="/">Home</Link>
+                        <Link className="text-black  text-decoration-none hover:underline " href={"/contactPage"}>Contact</Link>
+                        <Link className="text-black  text-decoration-none hover:underline " href={"/aboutPage"}>About</Link>
+                        <Link className=" text-black  text-decoration-none hover:underline " href="#contact">Sign Up </Link>
+                       
                     </div>
 
 
@@ -93,13 +93,13 @@ export default function Header() {
 
                 {navbar && (
                     <div className={`lg:hidden bg-white p-4 border-[2px] text-center  ${inter.className}`}>
-                        <Link href="/" className="block text-black  py-2  hover:underline " onClick={handleNavbar}>Home</Link>
+                        <Link href="/" className="block text-black  text-decoration-none   py-2  hover:underline " onClick={handleNavbar}>Home</Link>
 
-                        <Link href={"/contactPage"} className="block text-black py-2 hover:underline" onClick={handleNavbar}>Contact</Link>
+                        <Link href={"/contactPage"} className="block text-black py-2   text-decoration-none  hover:underline" onClick={handleNavbar}>Contact</Link>
 
-                        <Link href={"/aboutPage"} className="block text-black py-2 hover:underline" onClick={handleNavbar}>About</Link>
+                        <Link href={"/aboutPage"} className="block   text-decoration-none  text-black py-2 hover:underline" onClick={handleNavbar}>About</Link>
 
-                        <Link href="#contact" className="block text-black py-2 hover:underline" onClick={handleNavbar}>Sign Up</Link>
+                        <Link href="#contact" className="block text-black  text-decoration-none   py-2 hover:underline" onClick={handleNavbar}>Sign Up</Link>
                     </div>
                 )}
             </nav>
@@ -110,31 +110,3 @@ export default function Header() {
     )
 }
 
-{/* <Menubar>
-    <MenubarMenu>
-        <MenubarTrigger>
-            <button className=" rounded-full p-1  font-bold hover:bg-[#DB4444]">
-                <FiUser className="w-6 h-6  md:w-8 md:h-8 " />
-            </button>
-        </MenubarTrigger>
-        <MenubarContent>
-            <MenubarItem>
-                Manage My Account
-            </MenubarItem>
-            <MenubarItem>
-                My Order
-            </MenubarItem>
-            <MenubarItem>
-                My Cancellations
-            </MenubarItem>
-            <MenubarItem>
-                My Reviews
-            </MenubarItem>
-            <MenubarItem>
-                Logout
-            </MenubarItem>
-            <MenubarSeparator />
-        </MenubarContent>
-
-    </MenubarMenu>
-</Menubar> */}
