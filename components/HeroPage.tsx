@@ -100,7 +100,7 @@ export default function HeroPage() {
 
                                         />
                                         <div
-                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 md:top-48 start-10 translate-middle-y"
+                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 sm:top-48 start-10 translate-middle-y"
                                             style={{ color: "#fff" }}
                                         >
                                             <div className="d-flex align-items-center gap-6   ">
@@ -137,7 +137,7 @@ export default function HeroPage() {
 
                                         />
                                         <div
-                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 md:top-48 start-10 translate-middle-y"
+                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 sm:top-48 start-10 translate-middle-y"
                                             style={{ color: "#fff" }}
                                         >
                                             <div className="d-flex align-items-center gap-6   ">
@@ -173,7 +173,7 @@ export default function HeroPage() {
 
                                         />
                                         <div
-                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 md:top-48 start-10 translate-middle-y"
+                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 sm:top-48 start-10 translate-middle-y"
                                             style={{ color: "#fff" }}
                                         >
                                             <div className="d-flex align-items-center gap-6   ">
@@ -209,7 +209,7 @@ export default function HeroPage() {
 
                                         />
                                         <div
-                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 md:top-48 start-10 translate-middle-y"
+                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 sm:top-48 start-10 translate-middle-y"
                                             style={{ color: "#fff" }}
                                         >
                                             <div className="d-flex align-items-center gap-6   ">
@@ -245,7 +245,7 @@ export default function HeroPage() {
 
                                         />
                                         <div
-                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 md:top-48 start-10 translate-middle-y"
+                                            className="carousel-caption text-start position-absolute flex flex-col justify-content-center top-32 sm:top-48 start-10 translate-middle-y"
                                             style={{ color: "#fff" }}
                                         >
                                             <div className="d-flex align-items-center gap-6   ">
