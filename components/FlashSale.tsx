@@ -21,13 +21,12 @@ export default function FlashSales() {
                                 Flash Sale
                             </h1>
                         </div>
-
                         {/* Arrows */}
-                        <div className="flex justify-between ">
+                        <div className="flex flex-col md:flex-row  md:justify-between ">
                             <div>
                                 <CountdownTimer />
                             </div>
-                            <div className="flex  md:justify-end md:items-end ">
+                            <div className="flex  justify-end items-end ">
                                 <Image src={"/homeImg/Fill With Left Arrow.svg"}
                                     alt="left arrow"
                                     width={46}
