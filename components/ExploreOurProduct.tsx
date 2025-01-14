@@ -1,13 +1,13 @@
-import CountdownTimer from "./CountdownTimer";
 import Image from "next/image"
 import { Card, CardContent, } from "@/components/ui/card"
 import { IoEyeOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { firstFourProducts } from "@/sanity/lib/queries";
+import { lastEightProducts } from "@/sanity/lib/queries";
 import Link from "next/link";
 
-// Interface 
+
+// interface
 interface IProduct {
     _id : number,
     name : string,
@@ -18,57 +18,49 @@ interface IProduct {
     imageUrl : string
 }
 
+export default async function ExploreOurProducts() {
+    const product : IProduct[] = await sanityFetch({query : lastEightProducts})
 
-export default async function FlashSales() {
-    const product : IProduct[] = await sanityFetch({query : firstFourProducts})
 
     return (
         <div className=" flex flex-col justify-center items-center">
             {/* Cards */}
             <div>
-                <div className="container mt-24  mb-14">
+                <div className="container mt-24 ">
                     <div className="flex gap-5 items-center">
                         <div className="bg-red rounded-[4px] w-[20px] h-[40px]"></div>
-                        <p className="flex  font-normal text-xl text-red ">{`Today's`}</p>
+                        <p className="flex  font-normal text-xl text-red ">Our Products</p>
                     </div>
-                    <div className="flex flex-col md:flex-row gap-5 pt-10 justify-between">
-                        <div className="flex gap-10">
-                            <h1 className={`text-4xl font-semibold text-black flex `} >
-                                Flash Sale
-                            </h1>
+                    <div className="flex justify-between gap-5 pt-10">
+                        <div className="flex">
+                            <span className={`text-4xl font-semibold text-black flex `} >
+                                Explore Our Products
+                            </span>
                         </div>
+
                         {/* Arrows */}
-                        <div className="flex flex-col md:flex-row  md:justify-between ">
-                            <div>
-                                <CountdownTimer />
-                            </div>
-                            <div className="flex  justify-end items-end ">
-                                <Image src={"/homeImg/Fill With Left Arrow.svg"}
-                                    alt="left arrow"
-                                    width={46}
-                                    height={46}
-                                >
-                                </Image>
+                        <div className="flex  justify-end items-end ">
+                            <Image src={"/homeImg/Fill With Left Arrow.svg"}
+                                alt="left arrow"
+                                width={46}
+                                height={46}
+                            >
+                            </Image>
 
-                                <Image src={"/homeImg/Fill with Right Arrow.svg"}
-                                    alt="right arrow"
-                                    width={46}
-                                    height={46}>
+                            <Image src={"/homeImg/Fill with Right Arrow.svg"}
+                                alt="right arrow"
+                                width={46}
+                                height={46}>
 
-                                </Image>
-
-                            </div>
-
+                            </Image>
                         </div>
-                    </div>
 
-                    {/* Card */}
-                    <div className="flex  justify-center items-center pt-12">
+                    </div>
+                    <div className="flex flex-col  justify-center items-center pt-12">
                         <div className=" grid  justify-center items-center grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6  md:gap-7 lg:gap-8">
 
-                            {/* Mapping */}
-                            {product.map((product) =>(
-                                <div key={product._id} className="" >
+                            {product.map((product)=>(
+                                <div key={product._id} className="">
                                 <Card>
                                     <CardContent className="w-[270px] rounded-[4px]  flex flex-col  gap-2 ">
                                         <div className="bg-dullWhite">
@@ -92,7 +84,7 @@ export default async function FlashSales() {
 
                                             <div className="flex flex-col justify-center items-center hover ">
                                                 <Image src={product.imageUrl}
-                                                    alt={product.name}
+                                                    alt="bag image"
                                                     width={178}
                                                     height={129}
                                                     className="h-[180px] "></Image>
@@ -111,7 +103,6 @@ export default async function FlashSales() {
                                                 </div>
 
                                                 <div className="flex gap-2 w-[140px] h-[20px]  mr-40">
-                                                    <span>rate:{product.rate}</span>
                                                     <Image src={"/wishlistImg/Five star.svg"}
                                                         alt="five star"
                                                         width={100}
@@ -122,16 +113,22 @@ export default async function FlashSales() {
                                         </div>
                                     </CardContent>
                                 </Card>
+
                             </div>
                             ))}
+
                         </div>
+
                     </div>
+
+
+                    {/* button */}
+                    <div className="flex justify-center items-center">
+                    <button className=" mt-8 rounded-[4px] py-4 px-12 gap[10px]   bg-red  text-dullWhite text-base font-medium">View All Products </button>
+                    </div>
+                   
                 </div>
             </div>
-
-            {/* button */}
-            <button className=" mt-8 rounded-[4px] py-4 px-12 gap[10px]  bg-red  text-dullWhite text-base font-medium">View All Products</button>
-
         </div>
     )
 }

@@ -7,7 +7,7 @@ import HeroPage from "@/components/HeroPage";
 import HeroPage2 from "@/components/HeroPage2";
 import NewArrival from "@/components/NewArrival";
 import Services from "@/components/Services";
-import ExploreOurProducts from "@/components/ThisMonthProduct";
+import ExploreOurProducts from "@/components/ExploreOurProduct";
 export default function Home() {
 
   return (
