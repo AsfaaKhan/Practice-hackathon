@@ -59,7 +59,6 @@ export default function Contact() {
                             <div className="gap-4 font-normal text-sm text-black flex flex-col">
                                 <p>We are available 24/7, 7 days a week.</p>
                                 <p>Phone: +8801611112222</p></div>
-
                         </div>
                     </div>
 
@@ -81,32 +80,25 @@ export default function Contact() {
                                 <p className="">Fill out our form and we will contact <br /> you within 24 hours.</p>
                                 <p>Emails: customer@exclusive.com</p>
                                 <p>Emails: support@exclusive.com</p></div>
-
                         </div>
                     </div>
-
-
                 </div>
 
                 {/* Right Side  */}
-                <div className=" flex flex-col gap-8  rounded-[4px] shadow-sm w-auto lg:w-[737px] ">
+                <div className=" flex flex-col gap-8  w-auto lg:w-[737px] ">
                     <div className="gap-4 w-auto flex flex-col lg:flex-row lg:w-[737px] lg:justify-between">
-                        <Input type="text" placeholder="Your Name" className=" w-auto md:w-[235px] h-[50px]" required></Input>
-                        <Input type="email" placeholder="Your Email" className="w-auto md:w-[235px] h-[50px]" required></Input>
-                        <Input type="phone number" placeholder="Your Phone" className="w-auto md:w-[235px] h-[50px]" required></Input>
+                        <Input type="text" placeholder="Your Name" className=" md:w-[235px] h-[50px]" required></Input>
+                        <Input type="email" placeholder="Your Email" className=" md:w-[235px] h-[50px]" required></Input>
+                        <Input type="phone number" placeholder="Your Phone" className=" md:w-[235px] h-[50px]" required></Input>
                     </div>
                     <div>
-                    <textarea className="lg:w-[737px]  placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-dullWhite border-[1px] rounded-[4px] pl-4 pt-4 " cols={30} rows={15} placeholder="Your Message"></textarea></div>
+                    <textarea className=" md:w-[235px] lg:w-[737px]  placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-dullWhite border-[1px] rounded-[4px] pl-4 pt-4 " cols={30} rows={15} placeholder="Your Message"></textarea></div>
 
                     <div className="flex justify-end">
                     <button className=" mt-8 rounded-[4px] py-4 px-12 gap[10px]  bg-red text-dullWhite text-base font-medium">Send Massage</button>
                     </div>
-
                 </div>
             </div>
-
-
-
         </div>
     )
 }
